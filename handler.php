@@ -11,18 +11,18 @@ require_once './vendor/autoload.php';
 use FormGuide\Handlx\FormHandler;
 
 
-$pp = new FormHandler(); 
+$pp = new FormHandler();
 
 $validator = $pp->getValidator();
-$validator->fields(['Name','Email'])->areRequired()->maxLength(50);
+$validator->fields(['Name', 'Email'])->areRequired()->maxLength(50);
 $validator->field('Email')->isEmail();
 $validator->field('Message')->maxLength(6000);
 
 
 $pp->requireReCaptcha();
-$pp->getReCaptcha()->initSecretKey('6LdW03QgAAAAADVT9qY1gFgKKXY9KBeGG_5X7wbm');
+//$pp->getReCaptcha()->initSecretKey('6LdW03QgAAAAADVT9qY1gFgKKXY9KBeGG_5X7wbm');
 
 
-$pp->sendEmailTo('designesia@gmail.com'); // ← Your email here
+$pp->sendEmailTo('info@sahelkwt.com'); // ← Your email here
 
 echo $pp->process($_POST);
