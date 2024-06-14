@@ -14789,6 +14789,9 @@ section .color-overlay {
   color: #fff;
   background: #333;
 }
+.services-carousel .owl-item > div{
+  height: 100%;
+}
 
 .project-images img {
   margin-bottom: 60px;
