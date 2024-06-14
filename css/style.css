@@ -14776,6 +14776,7 @@ section .color-overlay {
   text-decoration: none;
 }
 
+
 #services-list li a:hover {
   color: #111;
 }
@@ -14788,9 +14789,6 @@ section .color-overlay {
 #services-list li.active a:hover {
   color: #fff;
   background: #333;
-}
-.services-carousel .owl-item > div{
-  height: 100%;
 }
 
 .project-images img {
